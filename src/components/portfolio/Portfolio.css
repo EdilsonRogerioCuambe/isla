@@ -1,0 +1,101 @@
+.trabalho__filters {
+    display: flex;
+    align-items: center;
+    column-gap: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.trabalho__item {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: var(--font-bold);
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.trabalho__item:hover {
+    color: rgb(51, 31, 0);
+}
+
+.trabalho__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+}
+
+.trabalho__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.trabalho__mask {
+    background: rgb(51, 31, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.trabalho__card:hover .trabalho__mask {
+    opacity: 0.8;
+}
+
+.trabalho__categoria {
+    color: #fff;
+    background-color: var(--primeira-cor);
+    border-bottom-left-radius: 0.98rem;
+    border-bottom-right-radius: 0.98rem;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    font-size: var(--small-font-size);
+    display: inline-block;
+    padding: 0.19rem 0.625rem;
+    transform: translateY(-40px);
+    transition: all 0.3s ease-in-out;
+}
+
+.trabalho__title {
+    color: #fff;
+    font-size: var(--h3-font-size);
+    margin: 0 0 0 0.98rem;
+    position: absolute;
+    padding: 0 1.25rem;
+    top: 3.75rem;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.trabalho__button {
+    color: #fff;
+    bottom: 1.5rem;
+    position: absolute;
+    left: 1.5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    background-color: #ffd15c;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.trabalho__card:hover .trabalho__button {
+    opacity: 1;
+}
+
+.trabalho__card:hover .trabalho__title,
+.trabalho__card:hover .trabalho__categoria {
+    opacity: 1;
+    transform: translateY(0);
+}

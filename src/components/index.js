@@ -1,0 +1,10 @@
+export { default as BarraLateral } from './barralateral/BarraLateral';
+export { default as Curriculo } from './curriculo/Curriculo';
+export { default as Home } from './home/Home';
+export { default as Servicos } from './servicos/Servicos';
+export { default as Sobre } from './sobre/Sobre';
+export { default as Portfolio } from './portfolio/Portfolio';
+export { default as Contato } from './contato/Contato';
+export { default as Blog } from './blog/Blog';
+export { default as Testemunhos } from './testemunhos/Testemunhos';
+export { default as Precos } from './precos/Precos';

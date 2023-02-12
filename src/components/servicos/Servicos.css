@@ -1,0 +1,31 @@
+.servicos__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+}
+
+.servicos__card {
+    text-align: center;
+    padding: 1.875rem;
+    background-color: var(--container-cor);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primeira-cor);
+    align-items: center;
+}
+
+.servicos__card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
+}
+
+.servicos__title {
+    color: var(--h3-font-size);
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1.875rem;
+    color: #fff;
+}
+
+.servicos__description {
+    color: #f8f9fa;
+}

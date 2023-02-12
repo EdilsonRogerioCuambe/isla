@@ -1,0 +1,63 @@
+.precos__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.precos__item {
+    padding: 1.875rem 2.5rem;
+    background-color: var(--container-cor);
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 0 1.25rem;
+}
+
+.precos__plan {
+    margin: 1.25rem 0;
+    font-size: var(--h2-font-size);
+}
+
+.precos__title,
+.precos__support {
+    margin-bottom: 1rem;
+}
+
+.preco {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+}
+
+.preco em {
+    font-style: normal;
+    font-size: var(--small-font-size);
+    margin-right: 0.5rem;
+    vertical-align: super;
+}
+
+.preco span {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    margin-left: 0.75rem;
+}
+
+.precos__item .btn {
+    margin-top: 1.25rem;
+}
+
+.precos__item.best {
+    padding: 3.4rem 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 2.6rem;
+    transform: rotate(-45deg);
+    padding: 0.25rem 0.75rem;
+    font-size: var(--small-font-size);
+    background-color: rgb(69, 254, 52);
+    border-radius: var(--border-radius);
+    color: #fff;
+}

@@ -1,0 +1,111 @@
+.sobre__container {
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.sobre__data {
+    padding: 1.875rem;
+    background-color: var(--container-cor);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.sobre__data::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-cor);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+}
+
+.sobre__img {
+    height: 250px;
+    width: 250px;
+}
+
+.sobre__description {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.sobre__skills {
+    row-gap: 1.25rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font--medium);
+}
+
+.skills__number {
+    line-height: 1.2;
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 7px;
+    border-radius: 0.25rem;
+}
+
+.skills__bar {
+    background-color: #b28f66;
+}
+
+.skills__percentage {
+    display: block;
+    background-color: var(--primeira-cor);
+}
+
+.ui__design {
+    width: 100%;
+    background-color: #66b26f;
+}
+
+.informatica {
+    width: 100%;
+    background-color: #66abb2;
+}
+
+.marketing__digital {
+    width: 75%;
+    background-color: #b266b2;
+}
+
+.sobre__caixas {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.35rem;
+}
+
+.sobre__caixa {
+    display: flex;
+    column-gap: 1.5rem;
+    background-color: var(--container-cor);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.sobre__icon {
+    font-size: var(--h1-font-size);
+    color: var(--primeira-cor);
+}
+
+.sobre__title {
+    font-size: 1.875rem;
+}
+

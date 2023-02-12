@@ -1,0 +1,70 @@
+.testemunhos__container {
+    width: 700px;
+    margin: auto;
+}
+
+.testemunhos__item {
+    text-align: center;
+    padding: 0 1.25rem .25rem;
+}
+
+.thumb {
+    height: 5.6rem;
+    width: 5.6rem;
+    margin: 0 auto;
+}
+
+.testemunhos__img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.testemunhos__title {
+    margin-top: 1rem;
+}
+
+.testemunhos__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.testemunhos__comment {
+    background-color: #fff;
+    padding: 1.875rem;
+    margin-top: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.testemunhos__comment::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    left: 49.5%;
+    top: -0.625rem;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primeira-cor) !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets 
+.swiper-pagination-bullet {
+    margin: 0 0.25rem !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1rem !important;
+    height: 0.5rem !important;
+    border-radius: 0.5rem !important;
+}
