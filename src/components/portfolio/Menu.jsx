@@ -10,31 +10,31 @@ const Menu = [
     {
         id: 1,
         imagem: work1,
-        titulo: "Project Management Illustration",
+        titulo: "Consultoria",
         categoria: "application",
     },
     {
         id: 2,
         imagem: work2,
-        titulo: "Guest App Walkthrough Screens",
+        titulo: "Au pair de sucesso",
         categoria: "criacao",
     },
     {
         id: 3,
         imagem: work3,
-        titulo: "Delivery App Wireframe",
+        titulo: "Treinamento de lingua inglesa",
         categoria: "treinamento",
     },
     {
         id: 4,
         imagem: work4,
-        titulo: "Onboarding Motivation",
+        titulo: "Formação de uma application",
         categoria: "application",
     },
     {
         id: 5,
         imagem: work5,
-        titulo: "iMac Mockup Design",
+        titulo: "Criação de um design",
         categoria: "criacao",
     },
 ];
