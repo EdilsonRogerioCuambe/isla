@@ -10,6 +10,7 @@
 .contato__title {
     font-size: var(--h3-font-size);
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .contato__form-group {
@@ -45,4 +46,32 @@
 
 .contato__form-area textarea {
     resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .contato__container {
+        grid-template-columns: 300px 360px;
+        justify-content: center;
+    }
+
+    .contato__form-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contato__container {
+        grid-template-columns: 310px;
+        row-gap: 1.875rem;
+    }
+
+    .contato__info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contato__container {
+        grid-template-columns: 1fr;
+    }
 }

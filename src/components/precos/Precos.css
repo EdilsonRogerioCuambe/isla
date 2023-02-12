@@ -61,3 +61,27 @@
     border-radius: var(--border-radius);
     color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+    .precos__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        gap: 1.875rem;
+    }
+
+    .precos__item.best {
+        padding: 1.875rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .precos__container {
+        grid-template-columns: 310px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .precos__container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -3,6 +3,7 @@
     align-items: center;
     column-gap: 1.875rem;
     margin-bottom: 2.5rem;
+    flex-wrap: wrap;
 }
 
 .trabalho__item {
@@ -98,4 +99,32 @@
 .trabalho__card:hover .trabalho__categoria {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+    .trabalho__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+
+    .trabalho__filters {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trabalho__container {
+        grid-template-columns: 310px;
+    }
+
+    .trabalho__filters {
+        row-gap: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .trabalho__container {
+        grid-template-columns: 1fr;
+    }
 }

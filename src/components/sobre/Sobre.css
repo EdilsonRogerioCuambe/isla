@@ -109,3 +109,57 @@
     font-size: 1.875rem;
 }
 
+@media screen and (max-width: 1024px) {
+    .sobre__container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+    .sobre__data::before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 49%;
+        top: -0.20px;
+    }
+    .sobre__img {
+        justify-self: center;
+    }
+    
+    .sobre__caixa {
+        flex-direction: column;
+        row-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobre__container {
+        grid-template-columns: 350px;
+    }
+
+    .sobre__data::before {
+        left: 47%;
+    }
+
+    .sobre__data {
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+    }
+
+    .sobre__caixas {
+        grid-template-columns: repeat(1, 350px);
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sobre__container {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre__caixas {
+        grid-template-columns: 1fr;
+    }
+}
