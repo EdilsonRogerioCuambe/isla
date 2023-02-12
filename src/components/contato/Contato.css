@@ -34,7 +34,15 @@
     background-color: var(--container-cor);
     border: none;
     outline: none;
-    border-radius: var(--border-radius);
+    border-radius: 1.875rem;
     padding: 0.625rem 1.875rem;
     z-index: 1;
+}
+
+.contato__form-area {
+    height: 10.25rem;
+}
+
+.contato__form-area textarea {
+    resize: none;
 }

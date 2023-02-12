@@ -4,7 +4,7 @@ import './Contato.css';
 const Contato = () => {
     return (
         <section className='contato container section' id='contato'>
-            <h2 className='section-title'>Contato</h2>
+            <h2 className='section-title'>Entre em Contato</h2>
             <div className='contato__container grid'>
                 <div className='contato__info'>
                     <h3 className='contato__title'>Vamos tomar um café</h3>
@@ -23,7 +23,7 @@ const Contato = () => {
                     <div className='contato__form-div'>
                         <input type='text' name='assunto' id='assunto' placeholder='Assunto' className='contato__form-input' />
                     </div>
-                    <div className='contato__form-div'>
+                    <div className='contato__form-div contato__form-area'>
                         <textarea placeholder='Sua mensagem' name='' id='' cols="30" rows="10" className='contato__form-input'>
 
                         </textarea>
