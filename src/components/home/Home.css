@@ -14,6 +14,7 @@
 .home__img {
     margin-bottom: 1.5rem;
     height: 250px;
+    margin-top: 1.5rem;
 }
 
 .home__name {
@@ -26,6 +27,8 @@
     display: flex;
     column-gap: 1.75rem;
     margin: 1.5rem 0;
+    justify-content: center;
+    padding-bottom: 3rem;
 }
 
 .home__social-link {
@@ -43,6 +46,7 @@
     bottom: 2.5rem;
     left: 0;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .home__scroll-name {

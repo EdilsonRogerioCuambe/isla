@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contato.css';
+import emailjs from '@emailjs/browser';
+
+
+
 
 const Contato = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+
+        emailjs.sendForm('service_dzex9jr', 'template_lucdh68',
+            form.current, 'g4PmQBt4j6-tYfmxl')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <section className='contato container section' id='contato'>
             <h2 className='section-title'>Entre em Contato</h2>
@@ -10,7 +28,7 @@ const Contato = () => {
                     <h3 className='contato__title'>Vamos tomar um café</h3>
                     <p className='contato__details'>Não gosta de formularios? Me envie um email.</p>
                 </div>
-                <form className='contato__form'>
+                <form ref={form} onSubmit={sendEmail} className='contato__form'>
                     <div className='contato__form-group'>
                         <div className='contato__form-div'>
                             <input type='text' name='name' id='name' placeholder='Nome' className='contato__form-input' />
@@ -28,7 +46,12 @@ const Contato = () => {
 
                         </textarea>
                     </div>
-                    <button className='btn'>Enviar mensagem</button>
+                    <button 
+                        className='btn'
+                        type='submit'
+                        >
+                            Enviar mensagem
+                    </button>
                 </form>
             </div>
         </section>

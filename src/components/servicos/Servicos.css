@@ -26,6 +26,10 @@
     color: #fff;
 }
 
+.servicos__img {
+    width: 100%;
+}
+
 .servicos__description {
     color: #f8f9fa;
 }

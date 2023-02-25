@@ -8,3 +8,5 @@ export { default as Contato } from './contato/Contato';
 export { default as Blog } from './blog/Blog';
 export { default as Testemunhos } from './testemunhos/Testemunhos';
 export { default as Precos } from './precos/Precos';
+export { default as PerguntasFrequentes } from './perguntas/PerguntasFrequentes';
+export { default as ServicosAvulsos } from './precos/ServicosAvulsos';

@@ -35,11 +35,13 @@ const BarraLateral = () => {
                                     </i>
                                 </a>
                             </li>
-                            <li className='natv__item'>
+                            {/*
+                                <li className='natv__item'>
                                 <a href="#curriculo" className='nav__link'>
                                     <i className="icon-graduation"></i>
                                 </a>
                             </li>
+                            */}
                             <li className='natv__item'>
                                 <a href="#portfolio" className='nav__link'>
                                     <i className="icon-layers"></i>

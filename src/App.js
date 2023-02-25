@@ -10,7 +10,9 @@ import {
     Contato,
     Blog,
     Testemunhos,
-    Precos
+    Precos,
+    PerguntasFrequentes,
+    ServicosAvulsos
 } from './components';
 
 const App = () => {
@@ -19,13 +21,15 @@ const App = () => {
             <BarraLateral />
             <main className='main'>
                 <Home />
-                <Sobre />
                 <Servicos />
-                <Curriculo />
+                <Sobre />
+                {/* <Curriculo /> */}
                 <Portfolio />
                 <Precos />
+                <ServicosAvulsos />
                 <Testemunhos />
                 <Blog />
+                <PerguntasFrequentes />
                 <Contato />
             </main>
         </>
